@@ -16,8 +16,9 @@ Pymap takes 42 seconds to scan 65535 ports with 8GB of ddr3, an Intel i3-2120 at
 # Install
 1. Run `git clone https://jwe0/pymap` to clone the repository
 2. Run `cd pymap` to change your location to the active directory
-3. Finally run `python scan.py -h` for mage help.
-4. Enjoy :)
+3. Run `pip install -r requirements.txt` to install the requirements
+5. Finally run `python scan.py -h` for mage help.
+5. Enjoy :)
 
 
 # Examples
