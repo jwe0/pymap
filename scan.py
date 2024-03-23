@@ -43,23 +43,43 @@ def Main():
 
     parser.add_argument("--target", "-t", help="Target ip address")
     parser.add_argument("--range", "-r", help="Define the range of ports")
+    parser.add_argument("--mode", "-m,")
     
     args = parser.parse_args()
 
 
-    range_start = 0
-    range_end = 65535
 
 
-    if args.range:
+    if args.target:
 
-        range_start = args.range.split(",")[0]
-        range_end = args.range.split(",")[1]
 
-    with tqdm(total=int(range_end), desc="Progress") as pbar:
-        for i in range(int(range_start), int(range_end)):
-            threading.Thread(target=check, args=[args.target, i]).start()
-            pbar.update(1)
+
+        if args.mode == "ports":
+
+
+
+
+            range_start = 0
+            range_end = 65535
+
+
+            if args.range:
+
+                range_start = args.range.split(",")[0]
+                range_end = args.range.split(",")[1]
+
+            with tqdm(total=int(range_end), desc="Progress") as pbar:
+                for i in range(int(range_start), int(range_end)):
+                    threading.Thread(target=check, args=[args.target, i]).start()
+                    pbar.update(1)
+
+        elif args.mode == "host":
+            print("[+] Host: {ip}".format(ip=socket.gethostbyname(args.target)))
+
+
+
+    else:
+        print("[+] Please supply a target")
 
 
 if __name__ == "__main__":
