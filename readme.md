@@ -20,7 +20,7 @@ Pymap has significantly less features compared to nmap so if you need to scan a 
 
 
 # Examples
-```json
+```shell
 python scan.py -t 127.0.0.1 -r 0,8080
 python scan.py -target 127.0.0.1 -range 0,8080
 ```
