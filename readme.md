@@ -22,8 +22,15 @@ Pymap takes 42 seconds to scan 65535 ports with 8GB of ddr3, an Intel i3-2120 at
 
 # Examples
 ```shell
-python scan.py -t 127.0.0.1 -r 0,8080
-python scan.py -target 127.0.0.1 -range 0,8080
+~ Port mode ~
+
+python scan.py -m ports -t 127.0.0.1 -r 0,8080
+python scan.py --mode ports --target 127.0.0.1 --range 0,8080
+
+~ Enum mode ~
+
+python scan.py -m host -t google.com
+python scan.py --mode host --target google.com
 ```
 
 # Regards
