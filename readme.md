@@ -10,7 +10,8 @@
 ```
 
 Pymap is a python version of the popular nmap utility which can be found @ `http://nmap.org`.\
-Pymap has significantly less features compared to nmap so if you need to scan a web application properly use nmap.
+Pymap has significantly less features compared to nmap so if you need to scan a web application properly use nmap.\
+Pymap takes 42 seconds to scan 65535 ports with 8GB of ddr3, an Intel i3-2120 at 3.30GHz and an NVIDIA GeForce GT 710
 
 # Install
 1. Run `git clone https://jwe0/pymap` to clone the repository
