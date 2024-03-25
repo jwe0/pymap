@@ -52,16 +52,10 @@ def Main():
 
     if args.target:
 
-
-
         if args.mode == "ports":
-
-
-
 
             range_start = 0
             range_end = 65535
-
 
             if args.range:
 
@@ -76,8 +70,6 @@ def Main():
         elif args.mode == "host":
             print("[+] Host: {ip}".format(ip=socket.gethostbyname(args.target)))
 
-
-
     else:
         print("[+] Please supply a target")
 
@@ -88,4 +80,4 @@ if __name__ == "__main__":
 
     for port in ports:
 
-        print("[+] Open port enumerated succesfully: {port}".format(port=port))
+        print("[PORT]   >   {port}".format(port=port))
