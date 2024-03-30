@@ -35,4 +35,4 @@ python scan.py --mode host --target google.com
 ```
 
 # Regards
-I take no legal responsiblity for any negative actions commited with my software. This was made for ethical purposes only <3.
+I take no legal responsibility for any negative actions committed with my software. This was made for ethical purposes only <3.
