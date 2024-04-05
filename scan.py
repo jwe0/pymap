@@ -32,7 +32,7 @@ def check_port(socket, ip, port):
     con = socket.connect_ex((ip, port))
     if con == 0:
         serv, proto = port_service(str(port))
-        print(f"[PORT]\t{ip}:{str(port)}\t{serv}\t{proto}")
+        print(f"[PORT]\t\t{ip}:{str(port)}\t\t{serv}\t\t{proto}")
 
 
 def Main():
